@@ -7,6 +7,11 @@ export const globalStyles = StyleSheet.create({
     color: 'black',
     textAlign: 'center'
   },
+  input: {
+    width: '80%',
+    borderRadius: 5,
+    borderColor: 'blue',
+  },
   paragraph: {
     marginVertical: 8,
     lineHeight: 20,

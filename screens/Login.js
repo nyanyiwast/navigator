@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, View, Button } from 'react-native'
+import { Text, View, Button, SafeAreaView, TextInput } from 'react-native'
 import { globalStyles } from '../styles/global'
 import { globalConstants } from '../configs/constants'
 
@@ -17,6 +17,14 @@ const LoginScreen = ({navigation}) => {
             title={'Login'}
             onPress={pressHandler}
         />
+
+    <SafeAreaView>
+        <TextInput
+            style={globalStyles.input}
+            placeholder="useless placeholder"
+            keyboardType="numeric"
+        />
+    </SafeAreaView>
     </View>
   )
 }
